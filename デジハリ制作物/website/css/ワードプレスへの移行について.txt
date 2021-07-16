@@ -1,0 +1,49 @@
+■事前情報
+ワードプレスはhtmlではなくphpでサイトを構成している。
+よって、htmlで作成したサイトはcssやjsの場所を示すコードをphpに置き換える対応が必要。
+
+また事前にmysqlの環境が必要？
+XAMPPなど活用してmysqlを用意したほうがいいかも・・・
+
+
+■フォルダ構成について
+フォルダ構成は以下の通り
+
+name-is-kinako
+∟app
+  ∟public
+    ∟wp-content
+      ∟themes
+        ∟テーマ毎のフォルダ  ・・・ワードプレスはサイトをテーマと呼ぶ。当フォルダにphp, css, img, jsなどサイトに必要なソースコードを配置する
+∟conf                        ・・・mysqlなど
+∟logs
+
+※name-is-kinakoの親フォルダはサーバの「www」フォルダが適切？
+  （www以外の親フォルダとなるとURLがおかしくなる？）
+
+
+■テーマについて
+テーマはワードプレスの画面に一覧で表示され、
+テーマの切り替えによって複数サイトの編集が出来る
+
+index.phpと同じ階層にあるstyle.cssにテーマ名を記載すれば、
+ワードプレスの画面に指定したテーマ名のテーマが表示される
+
+
+■行ったこと
+1. 静的htmlのphp化
+1-1. index.htmlをindex.phpに移行
+1-2. css, jsの配置場所を「functions.php」の関数に移行
+1-3. functions.phpの関数を呼び出すため、index.phpの内容を一部変更
+
+○index.phpの変更点
+  </head>の直前に<?php wp_head(); ?>
+  </body>の直前に<?php wp_footer(); ?>
+  get template directory uri関数でimgの場所を指定
+
+※画面遷移が不安定
+※ファイル名がindex.php以外だとサイトに反映されなかったため、現在はindex.htmlとmovie.htmlをそれぞれindex.phpに変更
+
+
+■現状出来ていないこと
+1. youtubeのチャンネルをギャラリー化するプラグインの配置

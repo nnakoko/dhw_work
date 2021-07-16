@@ -1,0 +1,18 @@
+画像名　　images/header/kv_logo.png
+alt原稿　　RCU DESIGN
+
+画像名　　images/header/kv_text.png
+alt原稿　　MAKE::VR#01 11.19 SUN SHIBUYA
+
+画像名　　images/header/kv_text__sp.png
+alt原稿　　MAKE::VR#01 11.19 SUN SHIBUYA
+
+画像名　　images/schedule/schedule_img.jpg
+alt原稿　　イベントの様子
+
+画像名　　images/schedule/schedule_img__sp.jpg
+alt原稿　　イベントの様子
+
+画像名　　images/footer/footer_logo.png
+alt原稿　　RCU DESIGN
+

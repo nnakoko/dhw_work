@@ -1,0 +1,99 @@
+section{
+    font-weight: 200;
+}
+.content_left{
+    position:relative;
+    width: 10%;
+    padding-top:10%;
+    margin-right: 5%;
+}
+.content_left .date{
+    position:absolute;
+    top:0;
+    right:0;
+    width:100%;
+    height:100%;
+    background-color: #ffffff;
+    color: #535353;
+  }
+.content_right{
+    width: 85%;
+    background-color: #ffffff; 
+    text-decoration: none!important;
+    color: #535353!important; 
+}
+.content_right:hover {   
+    background: rgb(213,253,255);
+    background: linear-gradient(90deg, #d5fdff, #fdcfff);
+    transition: 1s;
+}
+.m_t2{
+    margin-top: 2rem;
+}
+.m_b{
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width:760px) { 
+    /*　画面サイズが760pxまではここを読み込む　*/
+    .m_b{
+        margin-bottom: 1rem;
+    }
+    .date{
+        font-size: 3vw;
+        border-radius: 15px;
+    }
+    .schedule_ym{
+        color: #ffffff;
+        font-size: 5vw;
+        text-align: center;
+        font-weight: 100;
+        margin-top: 1rem;
+    }
+    .content_right {
+        border-radius: 15px;
+        padding: 0 1rem;
+        font-size: 2vw;  
+        background: rgb(213,253,255);
+        background: linear-gradient(90deg, #d5fdff, #fdcfff);
+        transition: 1s;
+    }
+    .back{
+        margin-right: 2vw;
+    }
+    .next{
+        margin-left: 2vw;
+    }
+    .back:hover, .next:hover{
+        opacity: 0.6;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width:761px) {
+    /*　画面サイズが761pxからはここを読み込む　*/
+    .schedule_ym{
+        color: #ffffff;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 100;
+    }
+    .back{
+        margin-right: 1.5rem;
+    }
+    .next{
+        margin-left: 1.5rem;
+    }
+    .back:hover, .next:hover{
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    .date{
+        font-size: 2rem;
+        border-radius: 20px;
+    }
+    .content_right{
+        border-radius: 20px;
+        font-size: 1rem;
+        padding: 0 1.5rem;
+    }
+}

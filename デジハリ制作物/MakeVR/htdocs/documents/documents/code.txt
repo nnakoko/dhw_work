@@ -1,0 +1,36 @@
+■ CSS
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Noto Sans CJK JP"),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff2) format('woff2'),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff) format('woff'),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.otf) format('opentype');
+ }
+
+
+■ HTML
+
+    <title>MAKE::VR#01 11月19日(日) SHIBUYAで開催！</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="Description" content="MAKE::VR#01 11月19日(日) SHIBUYAで開催！日々変化していくクリエイティブシーンの情報をインプットし、あらたな化学変化を起こすことを目的に、毎月業界の一線で活躍しているゲストをお招きして、お話を伺う勉強会です。">
+    <meta property="og:title" content="MAKE::VR#01 11月19日(日) SHIBUYAで開催！">
+    <meta property="og:description" content="MAKE::VR#01 11月19日(日) SHIBUYAで開催！日々変化していくクリエイティブシーンの情報をインプットし、あらたな化学変化を起こすことを目的に、毎月業界の一線で活躍しているゲストをお招きして、お話を伺う勉強会です。">
+    <meta property="og:type" content="Website">
+    <meta property="og:url" content="#">
+    <meta property="site_name" content="MAKE::VR#01 11月19日(日) SHIBUYAで開催！">
+    <meta property="og:image" content="images/meta/og-image.png">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="canonical" href="#">
+    <link rel="apple-touch-icon" href="images/meta/touch-icon.png">
+    <link rel="shortcut icon" href="images/meta/favicon.ico">
+
+
+■ Google Maps
+
+<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3241.5843968865815!2d139.70051981525825!3d35.66260988019864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sshibuya+cast!5e0!3m2!1sja!2sjp!4v1507962524283" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>

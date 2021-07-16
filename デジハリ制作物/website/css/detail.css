@@ -1,0 +1,42 @@
+section{
+    color: #535353;
+    font-weight: 200;
+}
+.border-radius-08{
+    border-radius: .8rem!important;
+}
+.detail_text{
+    width: 85%;
+    background-color: #ffffff;
+}
+.m_b{
+    margin-bottom: 1rem;
+}
+.detail_img{
+    width: 75%;
+    margin: 2rem auto 0;
+}
+@media screen and (max-width:760px) { 
+    /*　画面サイズが760pxまではここを読み込む　*/
+    .detail_text{
+        display: block;
+        margin: 1rem auto 0;
+        padding: 1.5rem;
+        font-size: 2.5vw;
+    }
+    .m_b{
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (min-width:761px) {
+    /*　画面サイズが761pxからはここを読み込む　*/
+    .detail_text{
+        display: block;
+        margin: 2rem auto 0;
+        padding: 2rem 3rem;
+        font-size: 1.2rem; 
+    }
+    .m_b{
+        margin-bottom: 1.5rem;
+    }
+}

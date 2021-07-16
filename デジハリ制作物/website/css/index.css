@@ -1,0 +1,57 @@
+.news{
+    width: 90%;
+    background-color: rgba(255,255,255,0.08);
+    color: #ffffff;
+    font-weight: 100;
+}
+/* .abc .read_more_img::after {
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: rgb(18,214,223);
+    background: linear-gradient(90deg, rgba(18,214,223,.8) 0%, rgba(247,15,255,.8) 100%);
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+.abc .read_more_img:hover::after {
+    transform: scale(1, 1);
+}
+.abc .read_more_img {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+} */
+
+@media screen and (max-width:760px) { 
+    /*　画面サイズが760pxまではここを読み込む　*/
+    .news{
+        margin: 3rem 0 0;
+        border-radius: 10px;
+        padding: 1.2rem;
+    }
+    .news_img{
+        width: 15%;
+    }
+
+}
+@media screen and (min-width:761px) {
+    /*　画面サイズが761pxからはここを読み込む　*/
+    .top_menu a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+    }
+    .news{
+        margin: 2rem 0 0;
+        border-radius: 15px;
+        padding: 2rem;
+    }
+    .news_img{
+        height: 1.2rem;
+    }
+
+}

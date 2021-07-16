@@ -1,0 +1,22 @@
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+@media screen and (max-width:760px) { 
+    /*　画面サイズが760pxまではここを読み込む　*/
+    section{
+        padding: 0 1rem;
+    }
+    .post{
+        margin-bottom: 2rem;
+        height: auto;
+    }
+}
+@media screen and (min-width:761px) {
+    /*　画面サイズが761pxからはここを読み込む　*/
+    .post{
+        margin: 0 1rem;
+        margin-bottom: 1.5rem;
+    }
+}

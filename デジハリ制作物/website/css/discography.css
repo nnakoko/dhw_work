@@ -1,0 +1,43 @@
+.cnts{
+    background-color: #fff;
+    border-radius: 10px;
+    color: #535353;
+    font-weight: 200;
+    width: 100%;
+}
+.song_img{
+    width: 45%;
+    height: auto;
+}
+.song_name{
+    width: 45%;
+    margin: auto;
+    text-align: center;
+}
+
+@media screen and (max-width:760px) { 
+    /*　画面サイズが760pxまではここを読み込む　*/
+    .dsg{
+        width: 80%;
+    }
+    .dsg .cnts{
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+    .song_name{
+        font-size: 3vw;
+    }
+}
+@media screen and (min-width:761px) {
+    /*　画面サイズが761pxからはここを読み込む　*/
+    .dsg{
+        width: 75%;
+    }
+    .dsg .cnts{
+        margin-bottom: 3rem;
+        padding: 2rem;
+    }
+    .song_name{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,220 @@
+@charset "utf-8";
+html {
+    top: 0;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+body {
+    top: 0;
+	color: #595757;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-feature-settings: "palt" 1;
+	line-height : 1.85;	
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+  }
+.playfair {
+    font-family: 'Playfair Display', serif;
+}
+.font_blue {
+    color: #8fafc3;
+}
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+  }
+.active {
+    color: #8fafc3;
+}
+.btn-close use:nth-of-type(1) {
+    -webkit-transform: translateY(30px) rotate(-45deg);
+    transform: translateY(30px) rotate(-45deg);
+}
+.btn-close use:nth-of-type(2) {
+    -webkit-transform: translateX(35px) translateY(-15px) rotate(45deg);
+    transform: translateX(35px) translateY(-15px) rotate(45deg);
+}
+.header_nav {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    z-index: 1;
+}
+h1 {
+    display: flex;
+    margin: 0 auto;
+}
+h1 img {
+    width: 72px;
+}
+.menu_area {
+    position: absolute;
+    position: left;
+    top: 0;
+    height: max-content;
+    z-index: 2;
+}
+.menu_area .search {
+    border-bottom: solid 2px #b3b3b3;
+    color: #b3b3b3;
+    margin-bottom: 56px;
+}
+.partition {
+    border-bottom: solid 2px #b3b3b3;
+    width: 54px;
+    margin: 19px 0 45px;
+}
+.menu_area ul {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.1em;
+    padding-left: 0;
+}
+main {
+    width: 100%;
+    box-sizing: border-box;
+}
+main ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    box-sizing: border-box;
+}
+main li {
+    text-align: center;
+}
+main li p:last-of-type{
+    margin-bottom: 24px;
+}
+
+@media (max-width: 768px){
+	.pc {
+		display: none;
+    }
+    header {
+        position: relative;
+        width: 100%;
+        height: 100vw;
+        background-image: url(../images/slide/slide_1_sp.png);
+        background-size: cover;
+    }
+    header button {
+        background-color: #8fafc3;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        z-index: 1;
+    }
+    .btn-trigger {
+        position: absolute;
+        z-index: 1;
+    }
+    .btn-close {
+        position: absolute;
+        top: 16px;
+        left: 275px;
+        z-index: 3;
+    }
+    use:first-of-type {
+        margin-top: 15px;
+    }
+    use:last-of-type {
+        margin-bottom: 15px;
+    }
+    .menu_area {
+        background-color: rgba(255,255,255,0.95);
+        width: 265px;
+        padding: 35px 35px 0;
+    }
+    .menu_area .search {
+        font-size: 14px;
+    }
+    .menu_area ul {
+        font-size: 12px;
+    }
+    .menu_area li {
+        text-align: left;
+    }
+    .menu_area .font_blue {
+        margin-bottom: 40px;
+    }
+    .menu_area .ctgy {
+        margin-bottom: 24px;
+    }
+    .partition {
+        border-bottom: solid 2px #b3b3b3;
+        width: 54px;
+        margin: 19px 0 45px;
+    }
+    main {
+        margin: 40px 15px 118px;
+    }
+    main li {
+        width: 47%;
+    }
+    main li p:first-of-type {
+        margin: 12px 0 10px;
+    }
+}
+@media (min-width: 769px){
+	.sp {
+		display: none;
+    }
+    header {
+        position: relative;
+        background-image: url(../images/slide/slide_1_pc.png);
+        background-size: cover;
+        height: 700px;  
+    }
+    .menu_area {
+        width: 150px;
+        padding: 15px 0 0 15px;
+    }
+    .menu_area .search {
+        line-height: 1.75;
+        font-size: 10px;
+    }
+    .menu_area ul {
+        font-size: 10px;
+    }
+    .menu_area .font_blue {
+        margin-bottom: 30px;
+    }
+    .menu_area .ctgy {
+        margin-bottom: 18px;
+    }
+    main {
+        width: 75%;
+        margin-left: 25%;
+    }
+    main ul {
+        margin-top: 56px;
+    }
+    main li {
+        width: 33%;
+    }
+    main li p:first-of-type {
+        margin: 20px 0 10px;
+    }
+    .catch_copy {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 300px;
+    }
+    .catch_copy p {
+       margin-right: 25px;
+       font-size: 32px;
+    }
+}
